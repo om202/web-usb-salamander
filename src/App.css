@@ -1,38 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.error {
+  border: 1px solid red;
+  padding: 1rem;
+  background-color: rgba(255, 0, 0, 0.05);
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.success {
+  color: green;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.width-80 {
+  text-wrap: wrap;
+  max-width: 80%;
+  white-space: pre-wrap;
+}
+
+.boxDefault {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  background-color: rgb(48, 48, 56);
+  color: rgb(209, 207, 207);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 0.6rem;
+  margin: 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 14px 28px rgba(252, 38, 38, 0.25), 0 10px 10px rgba(103, 103, 250, 0.22);
+}
+
+.circularBox {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 0.8rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(36, 36, 53);
+  color: rgb(209, 207, 207);
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  padding: 0.6rem;
+  margin: 20px;
+  box-shadow: 0 14px 28px rgba(38, 252, 145, 0.25), 0 10px 10px rgba(44, 2, 255, 0.22);
+}
+
+.buttonTransparent {
+  border: none;
+  width: fit-content;
+  background-color: transparent;
   color: white;
+  height: 40px;
+  width: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.boxesUiMain {
+  width: 320px;
+  background-color: rgb(219, 249, 249);
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.faIcon {
+  height: 100% !important;
+  width: 100% !important;
 }
